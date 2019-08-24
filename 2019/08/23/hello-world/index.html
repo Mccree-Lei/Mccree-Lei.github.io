@@ -240,6 +240,22 @@
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/08/23/hello-world/",
+  owner: 'Mccree-Lei',
+  repo: 'Mccree-Lei.github.io',
+  oauth: {
+    client_id: '521a9e6e7b9d7610f9af',
+    client_secret: 'bd1e58045b609d392f8d38c2059603dea77a46b1',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
