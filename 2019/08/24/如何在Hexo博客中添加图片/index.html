@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | 不羁放纵</title>
+  <title>如何在Hexo博客中添加图片 | 不羁放纵</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="不羁放纵">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
+<meta name="keywords" content="hexo使用,hexo添加图片">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在Hexo博客中添加图片">
+<meta property="og:url" content="http://yoursite.com/2019/08/24/如何在Hexo博客中添加图片/index.html">
 <meta property="og:site_name" content="不羁放纵">
+<meta property="og:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/.com//20131023164229367.jpg">
+<meta property="og:updated_time" content="2019-08-24T15:42:13.222Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不羁放纵">
+<meta name="twitter:title" content="如何在Hexo博客中添加图片">
+<meta name="twitter:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
+<meta name="twitter:image" content="http://yoursite.com/.com//20131023164229367.jpg">
   
     <link rel="alternative" href="/atom.xml" title="不羁放纵" type="application/atom+xml">
   
@@ -142,38 +149,57 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-如何在Hexo博客中添加图片" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+      <header class="article-header">
+        
+        
+        
 <a href="/2019/08/24/如何在Hexo博客中添加图片/" class="archive-article-date">
   	<time datetime="2019-08-24T14:52:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
 
-        </div>
-    	 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+		
+		<center><p>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/如何在Hexo博客中添加图片/">如何在Hexo博客中添加图片</a>
+    <h1 class="article-title_code_ant" itemprop="name">
+      如何在Hexo博客中添加图片
     </h1>
   
+</p></center>
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。</p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<p>其实步骤特点简单：</p>
+<h2 id="第一步：配置blog站点目录的配置文件"><a href="#第一步：配置blog站点目录的配置文件" class="headerlink" title="第一步：配置blog站点目录的配置文件"></a>第一步：配置blog站点目录的配置文件</h2><p>也就是配置blog(hexo)目录下的_config.yml，将 <code>psot_asset_folder:</code>  属性设置为 true</p>
+<h2 id="第二步：安装插件"><a href="#第二步：安装插件" class="headerlink" title="第二步：安装插件"></a>第二步：安装插件</h2><p>在blog的目录下执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="第三步：创建新的博客"><a href="#第三步：创建新的博客" class="headerlink" title="第三步：创建新的博客"></a>第三步：创建新的博客</h2><p>在blog的目录下执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>此时会在 sourse/_post 目录下生成一个跟标题一样的文件夹，把博客中需要用的图片放进去即可。</p>
+<h2 id="第四步：在博客中引用图片"><a href="#第四步：在博客中引用图片" class="headerlink" title="第四步：在博客中引用图片"></a>第四步：在博客中引用图片</h2><p>到此就大功告成了！</p>
+<p><img src="/.com//20131023164229367.jpg" alt="多读书，多看报"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -185,7 +211,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -198,86 +224,53 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/23/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-23T14:51:21.357Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/23/my-first-article/" class="archive-article-date">
-  	<time datetime="2019-08-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/my-first-article/">my first article</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">第一篇个人博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -314,8 +307,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
