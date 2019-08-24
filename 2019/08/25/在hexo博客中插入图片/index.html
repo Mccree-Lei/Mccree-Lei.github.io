@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>不羁放纵</title>
+  <title>在hexo博客中插入图片 | 不羁放纵</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="不羁放纵">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
+<meta name="keywords" content="hexo添加图片">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在hexo博客中插入图片">
+<meta property="og:url" content="http://yoursite.com/2019/08/25/在hexo博客中插入图片/index.html">
 <meta property="og:site_name" content="不羁放纵">
+<meta property="og:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/.com//book.jpg">
+<meta property="og:updated_time" content="2019-08-24T16:27:01.737Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不羁放纵">
+<meta name="twitter:title" content="在hexo博客中插入图片">
+<meta name="twitter:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
+<meta name="twitter:image" content="http://yoursite.com/.com//book.jpg">
   
     <link rel="alternative" href="/atom.xml" title="不羁放纵" type="application/atom+xml">
   
@@ -142,9 +149,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-在hexo博客中插入图片" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-在hexo博客中插入图片" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -155,6 +160,11 @@
   	<time datetime="2019-08-24T16:24:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-25</time>
 </a>
 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
         
       </header>
     
@@ -162,14 +172,27 @@
 		
 		<center><p>
   
-    <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/2019/08/25/在hexo博客中插入图片/">在hexo博客中插入图片</a>
+    <h1 class="article-title_code_ant" itemprop="name">
+      在hexo博客中插入图片
     </h1>
   
 </p></center>
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。</p>
-        
+<a id="more"></a>
+
+<p>其实步骤特点简单：</p>
+<h2 id="第一步：配置blog站点目录的配置文件"><a href="#第一步：配置blog站点目录的配置文件" class="headerlink" title="第一步：配置blog站点目录的配置文件"></a>第一步：配置blog站点目录的配置文件</h2><p>也就是配置blog(hexo)目录下的_config.yml，将 <code>psot_asset_folder:</code>  属性设置为 true</p>
+<h2 id="第二步：下载安装一个可以上传本地图片的插件"><a href="#第二步：下载安装一个可以上传本地图片的插件" class="headerlink" title="第二步：下载安装一个可以上传本地图片的插件"></a>第二步：下载安装一个可以上传本地图片的插件</h2><p>在blog的目录下执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="第三步：创建新的博客"><a href="#第三步：创建新的博客" class="headerlink" title="第三步：创建新的博客"></a>第三步：创建新的博客</h2><p>在blog的目录下执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>此时会在 sourse/_post 目录下生成一个跟标题一样的文件夹，把博客中需要用的图片放进去即可。</p>
+<h2 id="第四步：在博客中引用图片"><a href="#第四步：在博客中引用图片" class="headerlink" title="第四步：在博客中引用图片"></a>第四步：在博客中引用图片</h2><p>到此就大功告成了！</p>
+<p><img src="/.com//book.jpg" alt="多读书"></p>
+
       
 
       
@@ -202,16 +225,24 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/25/在hexo博客中插入图片/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/24/如何在Hexo博客中添加图片/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何在Hexo博客中添加图片</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -231,242 +262,14 @@
 
 
 
+  
+  
+  
 
   
-    <article id="post-如何在Hexo博客中添加图片" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-        
-        
-<a href="/2019/08/24/如何在Hexo博客中添加图片/" class="archive-article-date">
-  	<time datetime="2019-08-24T14:52:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-		
-		<center><p>
-  
-    <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/2019/08/24/如何在Hexo博客中添加图片/">如何在Hexo博客中添加图片</a>
-    </h1>
-  
-</p></center>
-      
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">hexo添加图片</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工具使用//" class="article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/24/如何在Hexo博客中添加图片/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-        
-        
-<a href="/2019/08/23/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-23T14:51:21.357Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
 
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-		
-		<center><p>
-  
-    <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/2019/08/23/hello-world/">Hello World</a>
-    </h1>
-  
-</p></center>
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-my-first-article" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-        
-        
-<a href="/2019/08/23/my-first-article/" class="archive-article-date">
-  	<time datetime="2019-08-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-		
-		<center><p>
-  
-    <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/2019/08/23/my-first-article/">my first article</a>
-    </h1>
-  
-</p></center>
-      
-        <h2 id="感言"><a href="#感言" class="headerlink" title="感言"></a>感言</h2><p>今天终于搭建了自己的个人博客，非常激动！这是一个良好的开始，希望在以后的工作中能更多的使用博客，使自己快速进步！</p>
-<h3 id="愉快的一天从写博客开始！"><a href="#愉快的一天从写博客开始！" class="headerlink" title="愉快的一天从写博客开始！"></a>愉快的一天从写博客开始！</h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">第一篇个人博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/my-first-article/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -503,8 +306,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
