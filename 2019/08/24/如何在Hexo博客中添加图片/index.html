@@ -17,7 +17,7 @@
 <meta property="og:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/08/24/如何在Hexo博客中添加图片/book.jpg">
-<meta property="og:updated_time" content="2019-08-26T04:47:33.470Z">
+<meta property="og:updated_time" content="2019-08-26T04:53:51.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在Hexo博客中添加图片">
 <meta name="twitter:description" content="前言当你看到篇博客，说明你已经在使用hexo搭建自己的个人博客了。俗话说：“有图有真相”！有时候图片比文字更加有说服力。下面，我们介绍一下如何在hexo博客中使用图片吧。">
@@ -182,15 +182,19 @@
 <a id="more"></a>
 
 <p>其实步骤特点简单：</p>
-<h2 id="第一步：配置blog站点目录的配置文件"><a href="#第一步：配置blog站点目录的配置文件" class="headerlink" title="第一步：配置blog站点目录的配置文件"></a>第一步：配置blog站点目录的配置文件</h2><p>也就是配置blog(hexo)目录下的_config.yml，将 <code>psot_asset_folder:</code>  属性设置为 true</p>
+<h2 id="第一步：配置blog站点目录的配置文件"><a href="#第一步：配置blog站点目录的配置文件" class="headerlink" title="第一步：配置blog站点目录的配置文件"></a>第一步：配置blog站点目录的配置文件</h2><p>也就是配置blog(hexo)目录下的_config.yml，将 <code>psot_asset_folder:</code>  属性设置为 true。</p>
+<p>这样在建立文件时，<code>Hexo</code>会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用。</p>
 <h2 id="第二步：下载安装一个可以上传本地图片的插件"><a href="#第二步：下载安装一个可以上传本地图片的插件" class="headerlink" title="第二步：下载安装一个可以上传本地图片的插件"></a>第二步：下载安装一个可以上传本地图片的插件</h2><p>在blog的目录下执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install https://github.com/7ym0n/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
+<p>这是个修改过的插件，经测试无问题，使用这个插件来引入图片，而不是网上那些方法里说的用传统md语法相对路径的方法。</p>
 <h2 id="第三步：创建新的博客"><a href="#第三步：创建新的博客" class="headerlink" title="第三步：创建新的博客"></a>第三步：创建新的博客</h2><p>在blog的目录下执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
 
 <p>此时会在 sourse/_post 目录下生成一个跟标题一样的文件夹，把博客中需要用的图片放进去即可。</p>
-<h2 id="第四步：在博客中引用图片"><a href="#第四步：在博客中引用图片" class="headerlink" title="第四步：在博客中引用图片"></a>第四步：在博客中引用图片</h2><p>到此就大功告成了！</p>
+<h2 id="第四步：在博客中引用图片"><a href="#第四步：在博客中引用图片" class="headerlink" title="第四步：在博客中引用图片"></a>第四步：在博客中引用图片</h2><p>使用这样的方式引入图片：<strong></strong></p>
+<p>其中，test.jpg是图片的名字，后面是图片，描述可以随便写</p>
+<p>到此就大功告成了！</p>
 <img src="/2019/08/24/如何在Hexo博客中添加图片/book.jpg" title="This is an test image">
 
       
