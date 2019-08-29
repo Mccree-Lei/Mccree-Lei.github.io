@@ -3,6 +3,11 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
+  
+  <link rel="stylesheet" href="/lib/gitalk/gitalk.css">
+  <script src="/lib/gitalk/gitalk.min.js"></script>
+
+  
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
@@ -372,32 +377,26 @@
 
 
 
-	
-<section id="comments" class="comments">
-  <style>
-    .comments{margin:30px;padding:10px;background:#fff}
-    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-  </style>
-  <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "s8AB4w9UXMfJG0alU24jtIf9-gzGzoHsz",
-            app_key: "NqEFogdkrzWFB7DDBxcA3nnz",
-            placeholder: "老铁，唠两句？",
-            avatar:"monsterid"
-        });
-    }
-</script>
-  </section>
 
+<div class="gitalk">
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+            clientID: '8a919a3e3215631f416d',
+            clientSecret: '9ee19d152b0b67f16334bd28984a0f76ac6c6a98',
+            repo: 'https://github.com/Mccree-Lei/Mccree-Lei.github.io.git',
+            owner: 'Mccree-Lei',
+            admin: ['Mccree-Lei'],
+            id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+ 
+        gitalk.render('gitalk-container')
+    </script>
+</div>
+
+
+	
 
   
   
