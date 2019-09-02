@@ -7,15 +7,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/8 | 不羁放纵</title>
+  <title>idea中的tomcat控制台中文乱码问题 | 不羁放纵</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="不羁放纵">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="也许你会遇到这种情况，idea中的tomcat插件启动之后，控制台出现中文乱码，如下图所示   接下来我就介绍一下，如何解决这种乱码问题。">
+<meta name="keywords" content="控制台中文乱码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="idea中的tomcat控制台中文乱码问题">
+<meta property="og:url" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/index.html">
 <meta property="og:site_name" content="不羁放纵">
+<meta property="og:description" content="也许你会遇到这种情况，idea中的tomcat插件启动之后，控制台出现中文乱码，如下图所示   接下来我就介绍一下，如何解决这种乱码问题。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决1.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决2.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决3.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决4.png">
+<meta property="og:updated_time" content="2019-09-02T09:23:12.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不羁放纵">
+<meta name="twitter:title" content="idea中的tomcat控制台中文乱码问题">
+<meta name="twitter:description" content="也许你会遇到这种情况，idea中的tomcat插件启动之后，控制台出现中文乱码，如下图所示   接下来我就介绍一下，如何解决这种乱码问题。">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决1.png">
   
     <link rel="alternative" href="/atom.xml" title="不羁放纵" type="application/atom+xml">
   
@@ -143,164 +153,165 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-idea中的tomcat控制台中文乱码问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/26/快速利用Hexo和GitHub搭建个人博客/" class="archive-article-date">
-  	<time datetime="2019-08-26T13:27:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-26</time>
+      <header class="article-header">
+        
+        
+        
+<a href="/2019/09/02/idea中的tomcat控制台中文乱码问题/" class="archive-article-date">
+  	<time datetime="2019-09-02T08:54:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
 
-        </div>
-    	 
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+        
+      </header>
+    
+	
+	<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+		
+		<center><p>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/26/快速利用Hexo和GitHub搭建个人博客/">快速利用Hexo+GitHub搭建个人博客</a>
+    <h1 class="article-title_code_ant" itemprop="name">
+      idea中的tomcat控制台中文乱码问题
     </h1>
   
+</p></center>
+      
+        <p>也许你会遇到这种情况，idea中的tomcat插件启动之后，控制台出现中文乱码，如下图所示</p>
+<img src="/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决1.png">
 
-        <div class="article-info info-on-right">
-          
+<p>接下来我就介绍一下，如何解决这种乱码问题。</p>
+<a id="more"></a>
+
+<h2 id="第一步：修改idea配置文件"><a href="#第一步：修改idea配置文件" class="headerlink" title="第一步：修改idea配置文件"></a>第一步：修改idea配置文件</h2><p>在idea的bin目录下找到如图所示的两个文件</p>
+<img src="/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决2.png">
+
+<p>可以根据你自己安装的idea的版本，是32位就修改 idea.exe.vmoptions 这个文件，64位就修改 idea64.exe.vmoptions这个文件</p>
+<p>在文件中添加一行代码，如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dfile.encoding=UTF-8</span><br></pre></td></tr></table></figure>
+
+<img src="/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决3.png">
+
+<p>第二步：重启idea</p>
+<p>修改完后，重启软件，再次启动tomcat，这样乱码就解决了</p>
+<img src="/2019/09/02/idea中的tomcat控制台中文乱码问题/乱码解决4.png">
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo,搭建个人博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">控制台中文乱码</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Hexo//" class="article-tag-list-link color5">Hexo</a>
+        			<a href="/categories/idea//" class="article-tag-list-link color5">idea</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/24/如何在Hexo博客中添加图片/" class="archive-article-date">
-  	<time datetime="2019-08-24T14:52:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
-</a>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/02/如何删除idea项目/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何彻底删除idea项目</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/如何在Hexo博客中添加图片/">如何在Hexo博客中添加图片</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">hexo添加图片</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/工具使用//" class="article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/23/my-first-article/" class="archive-article-date">
-  	<time datetime="2019-08-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/my-first-article/">my first article</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">第一篇个人博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
+	
+<section id="comments" class="comments">
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "s8AB4w9UXMfJG0alU24jtIf9-gzGzoHsz",
+            app_key: "NqEFogdkrzWFB7DDBxcA3nnz",
+            placeholder: "老铁，唠两句？",
+            avatar:"monsterid"
+        });
+    }
+</script>
+  </section>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -337,8 +348,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
